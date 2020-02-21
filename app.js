@@ -140,6 +140,7 @@ function multiplyArray(multArr) { //eslint-disable-line
 
 }
 
+
 // Here is the test for multiplyArray(); uncomment it to run it
  testMultiplyArray(testArray);
 
@@ -149,9 +150,16 @@ function multiplyArray(multArr) { //eslint-disable-line
 
 // Don't forget to create a new branch for your work on the next question, if you attempt it.
 
+
+
+
+
+
 /////////////////////////////////////
 /* STRETCH GOAL: Problem 6
-Write a function called multiplyAnyArray() that takes an array of numbers of any length as its argument and returns an array whose first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and concatenates a message using the arguments that were passed into the function:
+Write a function called multiplyAnyArray() that takes an array of numbers of any length as its argument
+ and returns an array whose first element is the product of those numbers, and the second element is a
+  string that EXACTLY follows this example and concatenates a message using the arguments that were passed into the function:
 
 "The numbers 1,2,3,4,5 have a product of 120."
 
@@ -166,9 +174,14 @@ var testDynamicArray = [1,2,3,4,5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) { //eslint-disable-line
 
+  var mulProd2=[1,''];
+  for(var j = 0;j < testDynamicArray.length ;  j++) {
+    mulProd2= multiply(mulProd2[0],testDynamicArray[j]) ;}
+    var msg6 = 'The numbers 1,2,3,4,5 have a product of 120.';
+    return[mulProd2[0] , msg6];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
-// testMultiplyAnyArray(testDynamicArray);
+ testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.

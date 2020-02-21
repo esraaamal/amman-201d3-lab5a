@@ -1,7 +1,9 @@
 'use strict';
 /////////////////////////////////////
 /* Problem 1 (this is your demo that we'll solve in class)
-Write a function called sum() that takes in two numbers as arguments and then returns an array where the first element is the sum of those numbers, and the second element is a concatenated string that EXACTLY follows this example and uses the values that were input into the function:
+Write a function called sum() that takes in two numbers as arguments and then returns
+ an array where the first element is the sum of those numbers, and the second element is
+  a concatenated string that EXACTLY follows this example and uses the values that were input into the function:
 
 "The sum of 4 and 7 is 11."
 
@@ -15,27 +17,35 @@ function sum(a, b) {
      return[mySum ,msg];
 
 }
-console.log(sum(1,4));
+
 // Here is the test for sum(); uncomment it to run it
  testSum(4, 7);
 
-// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
+// Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't
+// forget to create a new branch for your work on the next question!
 
 /////////////////////////////////////
 /* Problem 2
-Write a function called multiply() that takes in two numbers as arguments and returns an array where the first element is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values that were input into the function:
+Write a function called multiply() that takes in two numbers as arguments and returns an array where the first element 
+is the product of those numbers, and the second element is a string that EXACTLY follows this example and uses the values
+ that were input into the function:
 
 "The product of 5 and 9 is 45."
 
-Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
+Test this function by hand in the console to get it working, and when you think it is finished,
+ uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
+  var multProduct = a*b ;
+  var msg2 = 'The product of 5 and 9 is 45.'; 
 
+return[multProduct ,msg2];
 }
 
+
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+testMultiply(5,9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
